@@ -1,0 +1,12 @@
+/* html/assets/style.css */
+body {
+    /* font-family: 'YourChosenFont', sans-serif; */ /* If you want a custom web font */
+}
+
+/* You can add very specific overrides or small styles here if Tailwind isn't enough */
+.select-all {
+  -webkit-user-select: all;  /* Chrome all / Safari all */
+  -moz-user-select: all;     /* Firefox all */
+  -ms-user-select: all;      /* IE 10+ */
+  user-select: all;          /* Likely future */
+}
