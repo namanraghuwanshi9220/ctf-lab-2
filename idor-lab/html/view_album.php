@@ -5,7 +5,7 @@ require_once 'auth_check.php'; // Route Protection!
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-define('THE_ULTIMATE_PENGUIN_SECRET', 'flag{SVG_P0w3r3d_P3ngu1n_S3cr3ts!}');
+define('THE_ULTIMATE_PENGUIN_SECRET', 'flag{P0w3r3d_P3ngu1n_S3cr3ts!}');
 $requested_album_id_str = $_GET['album_id'] ?? null;
 $reveal_action = isset($_GET['reveal_secret']) && $_GET['reveal_secret'] === 'true';
 
