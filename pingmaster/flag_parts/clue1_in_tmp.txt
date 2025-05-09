@@ -1,0 +1,7 @@
+RootReggie's Quick Note:
+Okay, the main access code... I put it somewhere super safe.
+Definitely not in /var/www/html/ directly.
+Hmm, where did I put that config backup for the 'secret_server_configs'?
+I think I backed it up in /opt/... something with 'config_backups'.
+Check there for the next piece of the puzzle.
+-RR
