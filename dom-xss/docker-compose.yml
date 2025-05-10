@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  victim_app:
+    build: ./victim_app
+    ports:
+      - "8000:80" # Victim app accessible on http://localhost:8000
+    volumes:
+      - ./victim_app/public:/var/www/html # For live edits during development
+    container_name: dominator_victim
+    restart: unless-stopped
+
+  attacker_server:
+    build: ./attacker_server
+    ports:
+      - "8001:80" # Attacker server accessible on http://localhost:8001
+    volumes:
+      - ./attacker_server/public:/usr/share/nginx/html # For live edits
+    container_name: dominator_attacker
+    restart: unless-stopped
